@@ -1,12 +1,13 @@
-type BoxsLogoProps = React.HTMLAttributes<SVGElement>;
+import type { SVGProps } from "react";
 
-export const BoxsIcon = (props: BoxsLogoProps) => {
+type BoxsIconProps = SVGProps<SVGSVGElement>;
+
+export const BoxsIcon = (props: BoxsIconProps) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			x="0"
 			y="0"
-			enableBackground="new 0 0 500 568"
 			viewBox="0 0 500 568"
 			{...props}
 		>
